@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=UnifrakturMaguntia&display=swap');
+
+#logo{
+    width: 40px;
+    height: 40px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+   padding: 10px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.fotos{
+    width: 100%;
+    height: 20%;
+}
+
+img {
+    width: 150px;
+}
+
+#cuerpo{
+    background-color: rgb(150, 150, 150);
+}
+
+h1{
+    justify-content: stretch;
+    font-size: medium;
+    color: rgb(253, 166, 116);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    justify-content: first baseline;
+    font-size: small;
+    color: rgb(207, 82, 253);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-size: smaller;
+    color: black;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: initial;
+    width: 50%;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.caja{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.cajita{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+    }
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px 20px 30px;
+        font-family: "Julee", cursive;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.tazas{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px 30px 20px 30px;
+}
+
+.alajero{
+    display: flex;
+    flex-direction:column-reverse;
+    margin: 20px 30px 20px 30px;
+}
+
+#boton{
+    background-color: transparent;
+    border: none;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 20;
+}
+
+.carousel slide carousel-fade{
+    justify-content: center;
+    margin-top: 100px;
+    margin-block: 80px;
+}
+
+.a{
+    text-decoration: double;
+}
+
+.ojo{
+    margin: 20px 30px 20px 30px;
+}
+
+.frase{
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 30px 20px 30px;
+    font-family: "Julee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo{
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 30px 20px 30px;
+    font-family: "Julee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.letra{
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 30px 20px 30px;
+    font-family: "Julee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#pie{
+    
+    display: flex;
+    justify-content: center;
+}
+
+#pie i{
+    padding-left: 50%;
+}
+
+@media(max-width: 760px){
+    .contenedor{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px;
+    }
+}
+
+@media(max-width: 760px){
+     .content{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 60px;
+    } 
+}
+
+@media(max-width: 760px){
+    header{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(47, 47, 47);
+        width: 100%;
+        }
+}
+
+@media(max-width: 760px){
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+       height: 20;
+    }
+}
+
+@media(max-width: 760px){
+      .multimedia{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    
+    
+    }
+    
+    
+    .gorro {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        margin: 8px;
+    }
+    
+    
+    .gorro .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+    
+    .gorro .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #585454;
+    }
+    
+    
+    .gorro .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .gorro .front h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        background: rgba(126, 121, 121, 0.486);
+        text-align: center;
+        font-family: "Courgette", cursive;
+        font-weight: 400;
+    }
+    
+    
+    .gorro p {
+        font-family: "Comfortaa", sans-serif;
+    }
+    
+    
+    .gorro .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(238, 189, 218);
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #000;
+    }
+    
+    
+    .gorro .back h3 {
+        font-weight: 400;
+        font-family: "Courgette", cursive;
+        color: #fff;
+    }
+    
+    
+    .gorro .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    
+    .gorro .back .link a {
+        color: #f3f3f3;
+    }
+    
+    
+    .gorro .back h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    
+    
+    .gorro .back p {
+        letter-spacing: 1px;
+    }
+    
+    
+    .gorro:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+    }
+    
+    
+    .gorro:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+    }
+    
